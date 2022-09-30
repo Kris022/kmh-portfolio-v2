@@ -2,7 +2,7 @@ import { AiOutlineGithub } from "react-icons/ai";
 
 export default function About() {
   return (
-    <div className="w-full sm:w-[1000px] m-auto text-white text-2xl flex flex-col gap-8">
+    <div className="w-full sm:max-w-[1000px] m-auto text-white text-2xl flex flex-col gap-8">
         
       <div className="text-justify tracking-tighter m-4">
         <h1 className="text-5xl font-semibold mb-4">About</h1>
