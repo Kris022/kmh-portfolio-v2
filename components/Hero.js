@@ -1,5 +1,5 @@
 export default function Hero() {
-  const st = "I build <software>";
+  const st = "I build software";
 
   return (
     <div className="w-full h-screen flex justify-center">

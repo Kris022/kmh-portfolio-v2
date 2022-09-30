@@ -1,6 +1,9 @@
 import { AiOutlineMenu } from "react-icons/ai";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
+    
+    
   return (
     <div className="bg-[#1F2937] text-white">
       <div className="flex justify-between items-center p-4">
