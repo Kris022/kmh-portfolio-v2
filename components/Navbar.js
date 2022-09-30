@@ -1,18 +1,24 @@
-import { AiOutlineMenu } from "react-icons/ai";
 import { useEffect, useState } from "react";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 export default function Navbar() {
-    
-    
+  const [mobileNav, setMobileNav] = useState(false);
+
+  const handleNav = () => {
+    setMobileNav(!mobileNav);
+  };
+
   return (
-    <div className="bg-[#1F2937] text-white">
-      <div className="flex justify-between items-center p-4">
+    <div className="fixed left-0 top-0 w-full z-50 ease-in duration-300 bg-[#1F2937] text-white">
+      <div className="flex justify-between items-center p-4 text-4xl">
         <div>
-          <h1>KMH</h1>
+          <h1 className="logo">KMH</h1>
         </div>
 
-        <AiOutlineMenu />
-        
+        <div onClick={handleNav}>
+          {mobileNav ? <AiOutlineClose /> : <AiOutlineMenu />}
+        </div>
+
         {/* Non-mobile Menu */}
         <div className="hidden">
           <ul>
@@ -20,7 +26,6 @@ export default function Navbar() {
             <li>Projects</li>
           </ul>
         </div>
-
       </div>
 
       {/* Mobile Menu */}
