@@ -10,7 +10,7 @@ import lvlImg from "../public/level-generation.jpg";
 export default function ProjectGird() {
     return (
       <div className="w-full text-white">
-        <div id="projects" className="max-w-[800px] mx-auto px-2 py-16">
+        <div id="projects" className="max-w-[1000px] mx-auto px-2 py-16">
           <h1 className="text-4xl mt-10 p-4">Projects</h1>
           <div className="grid md:grid-cols-2 gap-8">
             <ProjectItem

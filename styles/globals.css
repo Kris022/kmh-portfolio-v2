@@ -19,16 +19,18 @@ a {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 .logo {
-  font-family: 'Saira Stencil One';
+  font-family: "Saira Stencil One";
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
-    background-color: #1F2937;
-
+    background-color: #1f2937;
   }
   body {
     color: white;

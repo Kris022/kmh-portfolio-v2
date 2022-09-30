@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 export default function Navbar() {
@@ -12,14 +13,18 @@ export default function Navbar() {
     <div className="fixed left-0 top-0 w-full z-50 ease-in duration-300 bg-[#1F2937] text-white">
       <div className="flex justify-between items-center p-4 text-4xl max-w-[1240px] m-auto">
         <div>
-          <h1 className="logo text-5xl">KMH</h1>
+          <Link href="/"><h1 className="logo text-5xl">KMH</h1></Link>
         </div>
 
         {/* Non-mobile Menu */}
         <div className="text-xl">
           <ul className="hidden sm:flex flex-row gap-7">
-            <li>About</li>
-            <li>Projects</li>
+            <Link href="/#about">
+              <li>About</li>
+            </Link>
+            <Link href="/#projects">
+              <li>Projects</li>
+            </Link>
           </ul>
         </div>
 
@@ -35,9 +40,13 @@ export default function Navbar() {
               : "hidden"
           }
         >
-          <ul className="flex flex-col items-center text-4xl gap-5 bg-">
-            <li>About</li>
-            <li>Projects</li>
+          <ul onClick={(() => setMobileNav(false))} className="flex flex-col items-center text-4xl gap-5 bg-">
+            <Link href="/#about">
+              <li>About</li>
+            </Link>
+            <Link href="/#projects">
+              <li>Projects</li>
+            </Link>
           </ul>
         </div>
       </div>
