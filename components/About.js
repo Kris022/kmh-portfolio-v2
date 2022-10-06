@@ -18,7 +18,7 @@ export default function About() {
         </p>
       </div>
 
-      <a href="https://github.com/Kris022" target="_blank">
+      <a href="https://github.com/Kris022" target="_blank" rel="noreferrer">
         <div className="flex justify-center items-center flex-col text-center">
           <AiOutlineGithub size={60} />
           <p>GitHub</p>
