@@ -2,8 +2,10 @@ import { AiOutlineGithub } from "react-icons/ai";
 
 export default function About() {
   return (
-    <div id="about" className="pt-16 w-full sm:max-w-[1000px] m-auto text-white text-2xl flex flex-col gap-8">
-        
+    <div
+      id="about"
+      className="pt-16 w-full sm:max-w-[1000px] m-auto text-white text-2xl flex flex-col gap-8"
+    >
       <div className="text-justify tracking-tighter m-4">
         <h1 className="text-5xl font-semibold mb-4">About</h1>
         <p>
@@ -16,10 +18,12 @@ export default function About() {
         </p>
       </div>
 
-      <div className="flex justify-center items-center flex-col text-center">
-        <AiOutlineGithub size={60} />
-        <p>GitHub</p>
-      </div>
+      <a href="https://github.com/Kris022" target="_blank">
+        <div className="flex justify-center items-center flex-col text-center">
+          <AiOutlineGithub size={60} />
+          <p>GitHub</p>
+        </div>
+      </a>
     </div>
   );
 }

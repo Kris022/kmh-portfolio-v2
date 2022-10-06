@@ -9,9 +9,9 @@ html {
 body {
   background-color: #1F2937;
   color: white;
-  font-family: 'Mukta';
+  font-family: 'Mukta', Arial, Helvetica, sans-serif;
 }
 
 .logo {
-  font-family: 'Saira Stencil One';
+  font-family: 'Saira Stencil One', Arial;
 }
